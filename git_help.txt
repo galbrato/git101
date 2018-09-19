@@ -15,3 +15,13 @@ Comandos do git
 
 git init
 	Torna a pasta atual em um remositorio git, criando o sistemas de arquivos '.git/'
+
+git status
+	Mostrar informaçoes como a sua branch atual, alterações a serem "salvas"(commitadas) na sua pasta, arquivos que não estao trackeds
+
+git add <nome do arquivo a ser comitado>
+	Adiciona o arquivo passado por parametro ao seu pacote que AINDA sera comittado("salvado") 
+
+
+git commit
+	Abrir um editor de texto para documentar o seu commit, e ira salvar todos os arquivos adicionados com o comando "git add <nome>". 
