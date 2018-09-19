@@ -62,3 +62,36 @@ git checkout <hash_deum_commit>
 	NAO É UM COMANDO
 	arquivo com nomes dos arquivos que o git deve ignorar
 
+git merge <nome_da_branch_que_voce_vai_pegar_as_alterações>
+	cria um novo commit que vai ser o merge do commit ATUAL e do apontado pela branch passada por parametro, e pega o branch atual e aponta para esse novo commit
+git merge <hash_de_um_commit>
+	cria um novo commit que vai ser o merge do commit ATUAL e do commit identificado pela hash passada por parametro, e pega o branch atual e aponta para esse novo commit
+
+============ SE DEU CONFLITO =========
+para escolher entre uma versão d eum arquivo de uma branch ou de outra usar:
+git checkout --theirs <nome do arquivo>
+	ignorar a versão da HEAD e pegar a versão do commit que esta sendo mergeado
+git checkout --ours <nome do arquivo>
+	ignorar a versão do commit mergeado e pegar a versão da HEAD
+
+se quiser criar uma versão intermediaria do merge tera que abrir o arquivo que estara com os conflitos delimitados por: 
+	HEAD <<<<<<
+	<trecho de codigo que estava na HEAD>
+	===========
+	<trecho de codigo que estava no comiit mergeado>
+	>>>>>>>>>>
+(lembrando tem que aiodna dar git add e commit dos arquivos modificados para terminar o merge)
+=========================================
+COMANDOS COM O GIT HUB
+
+git remote add <nome_do_repositorio_remote> <URL>
+	linka o repositorio atual com um repositorio remoto, e da localmente um apelido para o remositorio remoeto que voce -SEMPRE- vai chamar de origin
+	OBS: <nome_do_repositorio_remote> = origin
+git clone <URL>
+	faz download do remositorio do git hub especificado pela URL
+git fetch
+	Sincroniza a arvore de commits locais com a arvore de commits remota
+git push <apelido_do_repo_remoto> <nome_da_branch_remota>
+	pegas os commits atuais e salva na branch especificada pelo nome
+	o apelido da remota geralmnete vai ser origin
+	Obs: se a branch remotar não existir ela sera criada com o nome passado, tente manter os nomes iguais a sua branch local
