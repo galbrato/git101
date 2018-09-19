@@ -34,3 +34,10 @@ git commit -m "<texto de documentação>"
 
 git log
 	Lista todos os commits feitos
+
+git log --graph --all --abbrev-commit --decorate --oneline
+	Pritna os commit em forma de arvore
+	
+git show <hash do commit a ser mostrado>
+	mostra todas as alterações feitas naquele commit
+
