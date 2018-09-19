@@ -58,3 +58,7 @@ git checkout <nome da brnach>
 git checkout <hash_deum_commit>
 	muda o ponteiro HEAD para um commit identificado pela hash, lembrando que muda o estado do projeto apra o estado que tava naquele  komento do commit
 
+.gitignore
+	NAO É UM COMANDO
+	arquivo com nomes dos arquivos que o git deve ignorar
+
