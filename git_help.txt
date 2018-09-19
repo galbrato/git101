@@ -1,0 +1,17 @@
+Comandos do terminal:
+cd <caminho apra pasta>
+	cd muda a localisacao para o caminho apssado por argumento
+cd ..
+	volta para pasta anterior
+mkdir <nome_da_pasta>
+	cria pasta com nome passado por argumento
+ls
+	Lista todos os arquivos dentor da pasta atual
+nano <nome do arquivo texto>
+	abre um editor de texto no terminal
+
+
+Comandos do git
+
+git init
+	Torna a pasta atual em um remositorio git, criando o sistemas de arquivos '.git/'
